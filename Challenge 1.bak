@@ -1,0 +1,6 @@
+task main() {
+   OnRev(OUT_B, 50);
+	 Wait(5000);
+	 RotateMotor(OUT_C, 50, 20);
+	 Wait(3000);
+}

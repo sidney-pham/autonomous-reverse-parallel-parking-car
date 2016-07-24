@@ -1,0 +1,41 @@
+#define LIGHT_THRESHOLD 40
+#define SPEED 50
+#define turn(direction) RotateMotor(OUT_C, 22, direction);
+#define DISTANCE_THRESHOLD 25
+
+bool found = false;
+
+task driveAndDetect() {
+  //PlayToneEx(262,4000,4,FALSE); Wait(4000);
+  while (SensorUS(IN_1) < DISTANCE_THRESHOLD) {
+    OnRev(OUT_B, SPEED);
+  }
+  Off(OUT_B);
+  found = true;
+  RotateMotor(OUT_A, 50, 90);
+  PlayToneEx(500,400,4,FALSE); Wait(400);
+}
+
+task steer() {
+  while (found == false) {
+    if (Sensor(IN_2) > LIGHT_THRESHOLD) {
+      turn(25);
+      until(Sensor(IN_2) < LIGHT_THRESHOLD);
+      //Wait(150);
+      turn(-25);
+    }
+  }
+}
+
+task main() {
+  SetSensorLight(IN_2);
+  SetSensorLowspeed(IN_1);
+  
+  RotateMotor(OUT_A, 50, -90);
+  Precedes(driveAndDetect, steer);
+
+}
+
+// end inside driveAndDetect
+// Precedes takes the functions that will occur after the task
+

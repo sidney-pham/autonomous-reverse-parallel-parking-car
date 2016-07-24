@@ -1,0 +1,25 @@
+// really sharp turns
+
+#define LIGHT_THRESHOLD 40
+#define SPEED 60
+#define turn(direction) RotateMotor(OUT_C, 50, direction);
+
+sub turnUntilBlack() {
+  if (Sensor(IN_2) > LIGHT_THRESHOLD) {
+    turn(14);
+    until(Sensor(IN_2) < LIGHT_THRESHOLD);
+    Wait(150);
+    turn(-14);
+  }
+}
+
+task main() {
+  SetSensorLight(IN_2);
+  while (true) {
+    OnRev(OUT_B, SPEED);
+    turnUntilBlack();
+  }
+}
+
+// sharp = turn 14 motor 50
+// less sharp = turn 25 motor <35

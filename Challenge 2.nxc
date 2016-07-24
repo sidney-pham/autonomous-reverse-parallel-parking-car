@@ -1,0 +1,8 @@
+task main() {
+   repeat(4){
+			 RotateMotor(OUT_A, 50, 90);
+    	 Wait(2000);
+			 RotateMotor(OUT_A, 50, -90);
+	 		 Wait(2000);
+	 }
+}

@@ -1,0 +1,151 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__signed_stack_001main	6	1	0	4	4
+1	__D0main	6	1	4	4	4
+2	__rotate_theAngle0	5	1	8	4	2
+3	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	12	4	4
+4	__rotate_angle0	6	1	16	4	6
+5	__signed_stack_002main	6	1	20	4	4
+6	__rotate_OldRotCount0	4	1	24	2	2
+7	__rotate_RotCount0	4	1	26	2	4
+8	__constVal0	2	1	28	1	11
+9	__constVal50	2	0	29	1	1
+10	__PFTmp	1	1	30	1	1
+11	____RotateMotor0_sign_tmp	2	1	31	1	4
+12	__constVal32	2	0	32	1	5
+13	__constVal1	2	0	33	1	5
+14	__constVal96	2	0	34	1	2
+15	__rotate_power0	1	1	35	1	5
+16	__constValNeg90	2	0	36	1	1
+17	__rotate_sync0	1	1	37	1	3
+18	__rotate_firstPort0	1	1	38	1	5
+19	____initialize_global_data_return	1	1	39	1	3
+20	____RotateMotor0_return	1	1	40	1	4
+21	__rotate_theRVP0	1	1	41	1	3
+22	__rotate_theRVI0	1	1	42	1	3
+23	__rotate_theRVD0	1	1	43	1	3
+24	__rotate_theOM0	1	1	44	1	7
+25	__rotate_theRM0	1	1	45	1	4
+26	__rotate_theRS0	1	1	46	1	3
+27	__rotate_thePower0	2	1	47	1	4
+28	__rotate_stop0	1	1	48	1	3
+29	__rotate_theTurnPct0	2	1	49	1	4
+30	__rotate_turnpct0	2	1	50	1	4
+31	__rotate_rs0	1	1	51	1	2
+32	__rotate_theUF0	1	1	52	1	6
+33	__rotate_ports0	7	0	54	4	7
+34	__rotate_ports0.__rotate_ports0_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	1	0	#line 1 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	2	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	1	2	#line 1 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	1	2	#line 1 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	2	2		set __signed_stack_001main, 4
+0	2	5	#line 2 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	2	5	#line 2 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	3	5		sub __signed_stack_001main, __signed_stack_001main, __constVal1
+0	2	9	#line 2 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	3	9		set __signed_stack_002main, 50
+0	2	12	#line 2 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	2	12	#line 2 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	3	12		set __D0main, 90
+0	3	15	#line 3 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	4	15	#pragma macro 33
+0	4	15		arrbuild __rotate_ports0, __constVal0
+0	4	19		mov __rotate_power0, __signed_stack_002main
+0	4	21		mov __rotate_angle0, __D0main
+0	4	23		mov __rotate_turnpct0, __constVal0
+0	4	25		mov __rotate_sync0, __constVal0
+0	4	27		mov __rotate_stop0, __constVal1
+0	4	29		mov __rotate_theRVP0, __constVal32
+0	4	31		mov __rotate_theRVI0, __constVal0
+0	4	33		mov __rotate_theRVD0, __constVal96
+0	4	35		subcall __RotateMotor0, ____RotateMotor0_return
+0	3543	37	#line 3543 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	3	37	#line 3 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	3	37	#line 3 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	4	37		set __Wait_7qG2_ms_7qG2_000_inline_main, 2000
+0	3	40	#line 3 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	8551	40	#line 8551 "NXCDefs.h"
+0	8552	40		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	43	#line 8551 "NXCDefs.h"
+0	4	43	#line 4 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	4	43	#line 4 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	5	43		set __signed_stack_002main, 50
+0	4	46	#line 4 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	4	46	#line 4 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	5	46		mov __D0main, __constValNeg90
+0	5	48	#line 5 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	6	48	#pragma macro 33
+0	6	48		arrbuild __rotate_ports0, __constVal0
+0	6	52		mov __rotate_power0, __signed_stack_002main
+0	6	54		mov __rotate_angle0, __D0main
+0	6	56		mov __rotate_turnpct0, __constVal0
+0	6	58		mov __rotate_sync0, __constVal0
+0	6	60		mov __rotate_stop0, __constVal1
+0	6	62		mov __rotate_theRVP0, __constVal32
+0	6	64		mov __rotate_theRVI0, __constVal0
+0	6	66		mov __rotate_theRVD0, __constVal96
+0	6	68		subcall __RotateMotor0, ____RotateMotor0_return
+0	3566	70	#line 3566 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	5	70	#line 5 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	5	70	#line 5 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	6	70		set __Wait_7qG2_ms_7qG2_000_inline_main, 2000
+0	5	73	#line 5 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	8551	73	#line 8551 "NXCDefs.h"
+0	8552	73		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	76	#line 8551 "NXCDefs.h"
+0	6	76	#line 6 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	9	76	#line 9 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	10	76		brtst 1, __ASM_Label_489, __signed_stack_001main
+0	9	79	#line 9 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+0	10	79		exit -1, -1
+1	5067	0		brtst 4, __rotate_Done0, __rotate_angle0
+1	5068	3		set ____RotateMotor0_sign_tmp, 0
+1	5068	6		brtst EQ, __sign_0, __rotate_angle0
+1	5068	9		set ____RotateMotor0_sign_tmp, -1
+1	5068	12		brtst LT, __sign_0, __rotate_angle0
+1	5068	15		set ____RotateMotor0_sign_tmp, 1
+1	5068	18	__sign_0:	mov __rotate_thePower0, ____RotateMotor0_sign_tmp
+1	5069	20		abs __rotate_theAngle0, __rotate_angle0
+1	5070	23		mul __rotate_thePower0, __rotate_thePower0, __rotate_power0
+1	5072	27		set __rotate_theUF0, 23
+1	5073	30		brtst 4, __rotate_NoSync0, __rotate_sync0
+1	5074	33		set __rotate_theOM0, 7
+1	5075	36		set __rotate_theRM0, 2
+1	5076	39		mov __rotate_theTurnPct0, __rotate_turnpct0
+1	5077	41		brtst 4, __rotate_Start0, __rotate_theTurnPct0
+1	5078	44		add __rotate_theUF0, __rotate_theUF0, __constVal32
+1	5079	48		jmp __rotate_Start0
+1	5081	50		set __rotate_theOM0, 3
+1	5082	53		set __rotate_theRM0, 0
+1	5083	56		set __rotate_theTurnPct0, 0
+1	5085	59		set __rotate_theRS0, 32
+1	5086	62		setout __rotate_ports0, 1, __rotate_theOM0, 8, __rotate_theRM0, 5, __rotate_theAngle0, 6, __rotate_theRS0, 10, __rotate_theRVP0, 11, __rotate_theRVI0, 12, __rotate_theRVD0, 2, __rotate_thePower0, 7, __rotate_turnpct0, 0, __rotate_theUF0
+1	5089	85		index __rotate_firstPort0, __rotate_ports0, 65535
+1	5091	89		getout __rotate_power0, __rotate_firstPort0, 2
+1	5092	93		brtst 4, __rotate_doneRunning0, __rotate_power0
+1	5093	96		getout __rotate_rs0, __rotate_firstPort0, 6
+1	5094	100		brcmp 4, __rotate_Running0, __rotate_rs0, __constVal32
+1	5096	104		brtst 4, __rotate_Reset0, __rotate_stop0
+1	5098	107		set __rotate_theOM0, 7
+1	5099	110		set __rotate_theUF0, 7
+1	5100	113		setout __rotate_ports0, 1, __rotate_theOM0, 8, __constVal1, 6, __rotate_theRS0, 2, __constVal0, 5, __constVal0, 0, __rotate_theUF0
+1	5102	128		getout __rotate_RotCount0, __rotate_firstPort0, 14
+1	5104	132		mov __rotate_OldRotCount0, __rotate_RotCount0
+1	5105	134		wait2 NA, __constVal50
+1	5107	137		getout __rotate_RotCount0, __rotate_firstPort0, 14
+1	5108	141		brcmp 5, __rotate_Stabilize0, __rotate_OldRotCount0, __rotate_RotCount0
+1	5109	145		set __rotate_theOM0, 4
+1	5110	148		setout __rotate_ports0, 8, __rotate_theRM0, 6, __constVal0, 1, __rotate_theOM0, 0, __constVal1
+1	5113	159		brtst 4, __rotate_Done0, __rotate_theTurnPct0
+1	5114	162		setout __rotate_ports0, 0, __constVal32
+1	5116	167		subret ____RotateMotor0_return
+2	10	0	#line 10 "\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc"
+2	11	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc
+1	__RotateMotor0	82	NXTDefs.h
+2	__initialize_global_data	251	\\SR8137CF01-FS02\StudentUsers\2017\433986989\Desktop\Reverse Parallel Parking Car Challenges\Challenge 2.nxc

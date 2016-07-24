@@ -1,0 +1,28 @@
+#define LIGHT_THRESHOLD 40
+#define SPEED 50
+#define turn(direction) RotateMotor(OUT_C, 22, direction);
+#define DISTANCE_THRESHOLD 25
+
+sub turnLeftUntilBlack() {
+  if (Sensor(IN_2) > LIGHT_THRESHOLD) {
+    turn(25);
+    until(Sensor(IN_2) < LIGHT_THRESHOLD);
+    //Wait(150);
+    turn(-25);
+  }
+}
+
+task main() {
+  SetSensorLight(IN_2);
+  SetSensorLowspeed(IN_1);
+  
+  RotateMotor(OUT_A, 50, -90);
+  
+  while (SensorUS(IN_1) < DISTANCE_THRESHOLD) {
+    OnRev(OUT_B, SPEED);
+    turnLeftUntilBlack();
+  }
+  Off(OUT_B);
+  PlayToneEx(262,400,4,FALSE); Wait(1000);
+  RotateMotor(OUT_A, 50, 90);
+}

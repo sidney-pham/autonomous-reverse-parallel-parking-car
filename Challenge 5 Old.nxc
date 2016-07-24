@@ -1,0 +1,13 @@
+#define THRESHOLD 40
+#define turn(direction, time) RotateMotor(OUT_C, 50, direction); Wait(time);
+
+task main() {
+  if (Sensor(IN_2) >= THRESHOLD) {
+    OnRev(OUT_B, 38);
+    turn(14, 1000);
+    until(Sensor(IN_2) < THRESHOLD);
+    RotateMotor(OUT_C, 50, -14);
+  } else {
+    OnRev(OUT_B, 40);
+  }
+}

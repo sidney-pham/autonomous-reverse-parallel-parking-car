@@ -1,0 +1,10 @@
+task main() {
+	SetSensorLowspeed(IN_1);
+  while (true) {
+    while(SensorUS(IN_1) > 20) {
+      OnRev(OUT_B, 50);
+	  }
+	  Off(OUT_B);
+	  PlayToneEx(262,400,4,FALSE); Wait(1000);
+  }
+}

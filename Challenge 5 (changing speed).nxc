@@ -1,0 +1,21 @@
+#define THRESHOLD 40
+#define turn(direction) RotateMotor(OUT_C, 50, direction);
+
+sub turnUntilBlack () {
+  if (Sensor(IN_2) >= THRESHOLD) {
+    turn(14);
+    until(Sensor(IN_2) < THRESHOLD);
+    turn(-14);
+  }
+}
+
+task main() {
+  SetSensorLight(IN_2);
+  while (true) {
+    OnRev(OUT_B, 70);
+    turnUntilBlack();
+  }
+}
+
+//RotateMotor(OUT_C, 50, -25);
+//Motor speed, turn degree

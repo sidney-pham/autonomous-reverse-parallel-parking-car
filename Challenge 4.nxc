@@ -1,0 +1,18 @@
+#define THRESHOLD 40
+#define playTone(t) PlayToneEx(262,400,4,FALSE); Wait(t);
+
+task main() {
+  SetSensorLight(IN_2);
+  
+  while (true) {
+
+    if (Sensor(IN_2) < THRESHOLD) {
+      OnRev(OUT_B, 50);
+    } else {
+      Off(OUT_B);
+      playTone(1000);
+      playTone(1000);
+      until(Sensor(IN_2) < THRESHOLD);
+    }
+  }
+}
